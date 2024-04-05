@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+
+    /* background: linear-gradient(135deg, #A367B1, #FFD1E3, #5D3587); */
+    background: beige;
+}
+
+.logo{
+    mix-blend-mode: multiply;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+    /* height: 50%; */
+    height: auto;
+}
+
+.rest-content{
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.dash-content{
+    margin-left: 15px;
+}
+
+button{
+    /* margin-top: none; */
+    height: 50px;
+    width: 170px;
+    border-radius: 10px;
+    background-color: #05972a;
+    color: beige;
+    border: none;
+    outline: none;
+    text-align: center;
+    /* transition: all 0.5s; */
+    box-shadow: 0 5px #739072;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #7360DF;
+}
+
+button:active{
+    background-color: #7360DF;
+    box-shadow: 0 2px #4F6F52;
+    transform: translateY(4px);
+}
+
+img{
+    width: 400px;
+    /* height: 322px; */
+}
+
+/* for tablet */
+@media only screen and (max-width:820px){
+
+    img{
+        width: 360px;
+    }
+    .rest-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        /* height: 50%; */
+        margin-top: 10px;
+       
+    }
+    .dash-content{
+        margin-top: 15px;
+    }
+}
+
+/* for mobile */
+@media only screen and (max-width:380px){
+    
+    img{
+        width: 300px;
+    }
+    .rest-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        /* height: 50%; */
+        margin-top: 10px;
+       
+    }
+    .dash-content{
+        margin-top: 15px;
+    }
+    button{
+        /* margin-top: none; */
+        height: 30px;
+        width:100px;
+        border-radius: 10px;
+    }
+}
