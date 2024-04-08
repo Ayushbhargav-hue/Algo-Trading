@@ -15,6 +15,10 @@ function navigateToProfile(){
     window.location.href = "profile.html";
 }
 
+function navigateToContactUs(){
+    window.location.href = "contactUs.html";
+}
+
 function navigateToLogout(){
     window.location.href = "logout.html";
 }
